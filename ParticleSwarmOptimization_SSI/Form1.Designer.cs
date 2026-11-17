@@ -28,19 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
+            PB1 = new PictureBox();
+            RTB1 = new RichTextBox();
+            BTN1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)PB1).BeginInit();
             SuspendLayout();
+            // 
+            // PB1
+            // 
+            PB1.BackColor = SystemColors.ControlLightLight;
+            PB1.Location = new Point(12, 12);
+            PB1.Name = "PB1";
+            PB1.Size = new Size(517, 426);
+            PB1.TabIndex = 0;
+            PB1.TabStop = false;
+            // 
+            // RTB1
+            // 
+            RTB1.Location = new Point(548, 21);
+            RTB1.Name = "RTB1";
+            RTB1.Size = new Size(232, 320);
+            RTB1.TabIndex = 1;
+            RTB1.Text = "";
+            // 
+            // BTN1
+            // 
+            BTN1.Location = new Point(548, 415);
+            BTN1.Name = "BTN1";
+            BTN1.Size = new Size(75, 23);
+            BTN1.TabIndex = 2;
+            BTN1.Text = "Start";
+            BTN1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(BTN1);
+            Controls.Add(RTB1);
+            Controls.Add(PB1);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)PB1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private PictureBox PB1;
+        private RichTextBox RTB1;
+        private Button BTN1;
     }
 }
